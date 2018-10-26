@@ -1,6 +1,6 @@
 # FlutterPracticeHome
 A new Flutter Practice module.
-
+[学习完demo一点心得，欢迎点击](https://nishibaiyang.github.io/yanzijie_blog/2018/10/25/Flutter%E8%AF%95%E9%A9%BE-%E4%B8%80%E7%82%B9%E5%BF%83%E5%BE%97/)
 ## demo截图
 ![demo list](https://github.com/nishibaiyang/FlutterPracticeHome/blob/master/flutter_module/images/1.png)
 ![首页底部导航](https://github.com/nishibaiyang/FlutterPracticeHome/blob/master/flutter_module/images/2.png)
