@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_module/App/AppHomePage.dart';
 import 'package:flutter_module/splash_screen_demo/splash_screen_home.dart';
 
-class SplashScreen extends StatefulWidget {
+class AppSplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen>
+class _SplashScreenState extends State<AppSplashScreen>
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation _animation;
@@ -21,8 +22,7 @@ class _SplashScreenState extends State<SplashScreen>
     _animation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(
-                builder: (context) => SplashScreenHome(title: 'Splash Demo')),
+            MaterialPageRoute(builder: (context) => AppHomePage()),
             (route) => route == null);
       }
     });

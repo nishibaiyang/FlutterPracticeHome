@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_module/App/app_splash_screen.dart';
 import 'package:flutter_module/beaytiful_search_bar_demo/search_bar_demo.dart';
 import 'package:flutter_module/bottom_appbar/BottomAppBarDemo.dart';
 import 'package:flutter_module/bottom_navigation_bar/BottomNavigationWidget.dart';
@@ -11,6 +12,7 @@ import 'package:flutter_module/pull_on_loading/pull_to_refresh.dart';
 import 'package:flutter_module/sliver_demo/sliver_demo.dart';
 import 'package:flutter_module/splash_screen_demo/splash_screen.dart';
 import 'package:flutter_module/textfields_focus_demo/textfields_focus_demo.dart';
+import 'package:flutter_module/will_pop_scope_demo/form_pop_demo.dart';
 import 'package:flutter_module/will_pop_scope_demo/will_pop_scpoe_demo.dart';
 
 class DemoListPage extends StatelessWidget {
@@ -29,7 +31,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'bottom_navigation_widget',
+              '首页底部导航',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -42,7 +44,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'bottom_app_bar_demo',
+              '子页面底部导航',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -55,7 +57,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'sliver_screen',
+              'sliver tab',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -68,7 +70,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'frosted_glass_demo',
+              '高斯模糊',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -81,7 +83,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'keep_alove_demo',
+              '保持页面状态',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -94,7 +96,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'search_bar_demo',
+              '状态栏搜索',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -107,7 +109,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'text_field_focus_demo',
+              'edittext',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -120,7 +122,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'expansion_tile_demo',
+              '扩展栏',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -133,7 +135,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'will_pop_scpoe_page',
+              '退出App',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -146,7 +148,7 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'splash_screen',
+              '闪屏页',
               style: TextStyle(color: Colors.amber),
             ),
           ),
@@ -161,7 +163,22 @@ class DemoListPage extends StatelessWidget {
               }));
             },
             child: Text(
-              'pulldown_refresh_pullipload_page',
+              '下拉刷新',
+              style: TextStyle(color: Colors.amber),
+            ),
+          ),
+          MaterialButton(
+            onPressed: () {
+//              Navigator.of(context)
+//                  .pushNamed('/pulldown_refresh_pullipload_page');
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (BuildContext context) {
+//                return PullToRefreshPage();
+                return AppSplashScreen();
+              }));
+            },
+            child: Text(
+              'App',
               style: TextStyle(color: Colors.amber),
             ),
           ),
